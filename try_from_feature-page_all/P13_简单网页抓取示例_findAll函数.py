@@ -18,6 +18,7 @@ def getTitle(url):
 
 # bsobj = getTitle('https://sina.com.cn')
 bsobj = getTitle('https://cn.bing.com/dict/search?q=color&FORM=BDVSP2&qpvt=color')
+# bsobj = getTitle('https://www.amazon.com/-/zh_TW/')
 if bsobj is None:
     print("bsobj could not be found")
 else:

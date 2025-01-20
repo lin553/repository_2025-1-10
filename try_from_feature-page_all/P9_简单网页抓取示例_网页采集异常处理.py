@@ -16,6 +16,7 @@ def getTitle(url):
         return None
     return title
 
+# title = getTitle("https://www.amazon.com/-/zh_TW/")
 title = getTitle('https://www.bing.com')
 if title == None:
     print("title could not be found")
