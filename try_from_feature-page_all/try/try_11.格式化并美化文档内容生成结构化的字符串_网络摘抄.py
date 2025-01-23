@@ -1,4 +1,5 @@
 # 摘自：https://www.runoob.com/python3/python-spider-beautifulsoup.html
+# try_11.格式化并美化文档内容生成结构化的字符串_网络摘抄
 
 from bs4 import BeautifulSoup
 import requests
@@ -21,3 +22,6 @@ html_str = str(soup)
 print(html_str)
 print(type(html_str))
 print('--------------------------------')
+
+# 格式化并美化文档内容，生成结构化的字符串。
+print(soup.prettify())

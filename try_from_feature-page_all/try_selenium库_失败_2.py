@@ -1,3 +1,6 @@
+# 失败，因为selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+#      无法下载，被墙
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By  # 导入 By 模块
 from selenium.webdriver.chrome.service import Service as ChromeService
