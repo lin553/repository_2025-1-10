@@ -1,10 +1,12 @@
+# 失败，中国打不开wiki
+
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
 import random
 import re   # 正则表达式库
 
-random.seed(datetime.datetime.now())    # 随机种子
+random.seed(int(datetime.datetime.now().timestamp()))    # 随机种子
 
 def getlinks(articleUrl):
     html = urlopen("https://en.wikipedia.org" + articleUrl)

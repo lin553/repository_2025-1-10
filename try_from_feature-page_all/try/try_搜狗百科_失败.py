@@ -1,3 +1,6 @@
+# 失败
+
+
 import requests
 from bs4 import BeautifulSoup
 import datetime
@@ -23,7 +26,7 @@ def get_links(article_url):
             # 查找所有符合条件的链接
             # 假设链接在具有特定类名的 <a> 标签中，例如 class="lemma-title"
             # 这里需要根据实际情况调整选择器
-            links = bsobj.find_all("a", href=re.compile("^(/wiki/.*|/v/.*)$"))
+            links = bsobj.find_all("a", href=re.compile("^(/sogou/.*|/v/.*)$"))
             
             if not links:
                 print(f"No links found for {article_url}")
@@ -43,7 +46,9 @@ def get_links(article_url):
 start_time = time.time()
 
 # 初始文章链接，例如“科学”词条
-links = get_links("/v/%E7%A7%91%E5%AD%A6")
+# links = get_links("/v/%E7%A7%91%E5%AD%A6")
+links = get_links("更多")      # "更多"
+
 
 while len(links) > 0:
     current_time = time.time()
