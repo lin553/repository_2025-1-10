@@ -5,7 +5,8 @@ from bs4 import BeautifulSoup
 import re
 
 # 打开网页并读取内容
-html = urlopen('https://www.eastmoney.com/')
+# html = urlopen('https://www.eastmoney.com/')
+html = urlopen('https://baike.sogou.com/')
 bsobj = BeautifulSoup(html.read(), features='html.parser')
 
 # 假设你想查找包含在某个div标签下的所有链接，首先需要确定正确的div标识符

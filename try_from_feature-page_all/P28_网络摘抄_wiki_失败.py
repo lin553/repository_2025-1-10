@@ -1,3 +1,5 @@
+# 失败，中国打不开wiki
+
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
